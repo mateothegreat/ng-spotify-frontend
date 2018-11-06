@@ -1,6 +1,6 @@
 export const environment = {
 
     production: true,
-    API_URL: 'https://ng-spotify-backend'
+    API_URL: 'https://ng-spotify-backend.herokuapp.com'
 
 };
