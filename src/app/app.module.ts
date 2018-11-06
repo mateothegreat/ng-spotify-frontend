@@ -12,6 +12,9 @@ import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { CallbackComponent } from './callback/callback.component';
+import { LogoutComponent } from './logout/logout.component';
+import { GravatarModule } from 'ngx-gravatar';
 
 @NgModule({
 
@@ -25,12 +28,15 @@ import { RouterModule } from '@angular/router';
         TrackListComponent,
         ThermometerComponent,
         HeaderComponent,
-        HomeComponent
+        HomeComponent,
+        CallbackComponent,
+        LogoutComponent
 
     ],
     imports: [
 
         BrowserModule,
+        GravatarModule,
         NgbModule,
 
         RouterModule.forRoot([
@@ -42,6 +48,11 @@ import { RouterModule } from '@angular/router';
 
             }, {
 
+                path: 'callback',
+                component: CallbackComponent
+
+            }, {
+
                 path: 'about',
                 component: AboutComponent
 
@@ -49,6 +60,11 @@ import { RouterModule } from '@angular/router';
 
                 path: 'search',
                 component: SearchComponent
+
+            }, {
+
+                path: 'logout',
+                component: LogoutComponent
 
             }, {
 

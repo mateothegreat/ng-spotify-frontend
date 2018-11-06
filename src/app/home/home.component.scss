@@ -1,0 +1,39 @@
+:host {
+    
+    .wrapper {
+        
+        display: flex;
+        
+        .left {
+            
+            flex: 1;
+            
+        }
+        
+        .right {
+            
+            flex: 0 1 300px;
+            
+            display: flex;
+            justify-content: flex-end;
+            
+            .welcome {
+                
+                color: deeppink;
+                text-align: right;
+                margin-right: 10px;
+                
+                &:first-line {
+                    
+                    color: #999;
+                    font-size: 13px;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

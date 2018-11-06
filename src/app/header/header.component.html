@@ -30,6 +30,32 @@
 
             </li>
 
+            <li *ngIf="!sessionService.session"
+                class="nav-item"
+                routerLinkActive="active">
+
+                <a class="nav-link"
+                   (click)="loginClick()">
+
+                    Login
+
+                </a>
+
+            </li>
+
+            <li *ngIf="sessionService.session"
+                class="nav-item"
+                routerLinkActive="active">
+
+                <a class="nav-link"
+                   [routerLink]="['/logout']">
+
+                    Logout
+
+                </a>
+
+            </li>
+
         </ul>
 
         <form class="form-inline my-2 my-lg-0">
