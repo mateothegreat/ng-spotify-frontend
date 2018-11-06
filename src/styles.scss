@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+body {
+    
+    background: #343A3F;
+    
+}
+
+.shadow-down {
+    
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.42);
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.42);
+    
+}
