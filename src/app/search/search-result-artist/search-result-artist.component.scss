@@ -1,0 +1,57 @@
+:host {
+    
+    .wrapper {
+        
+        display: flex;
+        
+        margin: 15px;
+        padding: 10px;
+        
+        border: 2px solid #666;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        
+        &:hover {
+            
+            border-color: limegreen;
+            
+        }
+        
+        .left {
+            
+            flex: 0 1 150px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            margin-right: 10px;
+            
+        }
+        
+        .right {
+            
+            flex: 1;
+            
+            table {
+                
+                tr {
+                    
+                    cursor: pointer;
+                    
+                    td {
+                        
+                        color: #999;
+                        vertical-align: top;
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}

@@ -46,4 +46,14 @@ export class SessionService {
 
     }
 
+    public getAccessToken(): string {
+
+        if (this.session) {
+
+            return this.session.access_token;
+
+        }
+
+    }
+
 }

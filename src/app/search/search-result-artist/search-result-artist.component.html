@@ -1,0 +1,41 @@
+<div class="wrapper">
+
+    <div class="left">
+
+        <img *ngIf="artist?.images[2]"
+             [src]="artist?.images[2]?.url">
+
+    </div>
+
+    <div class="right">
+
+        <table>
+
+            <tr>
+
+                <td>Artist:</td>
+                <td>{{ artist?.name }}</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Genres:</td>
+                
+                <td>
+
+                    <span *ngFor="let genre of artist?.genres">
+
+                        {{ genre }}
+
+                    </span>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>

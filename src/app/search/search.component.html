@@ -1,3 +1,9 @@
-<p>
-  search works!
-</p>
+<h1>{{ searchType }} results for "{{ searchTerms }}":</h1>
+
+<div *ngIf="searchType === 'artist'"
+     class="results">
+
+    <app-search-result-artist *ngFor="let artist of searchResults?.artists.items"
+                              [artist]="artist"></app-search-result-artist>
+
+</div>
